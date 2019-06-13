@@ -9,11 +9,27 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
 <!-- Header -->
 <!-- End Header -->
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="javascript:PopUpShow()">Вход</a>
+            </li>
+            <li class="nav__item">
+                <a class="myBtn" href="javascript:PopUpShowReg()">Регистрация</a>
+            </li>
+        </ul>
+
+    </nav>
+
+</header>
 
 <!-- breadcrumbs -->
 <section class=" breadcrumbs_wrapper" >
@@ -309,6 +325,132 @@
 
 </footer>
 <!-- End Footer -->
-    
+<div class="pop-up">
+    <div class="pop-up__content">
+       <div class="pop-up__title">
+           
+           <h1>Вход в личный кабинет
+            </h1>
+       </div>
+       <form class="form-in" action="form">
+            <div class="pop-up__close">
+                    <a class="pop-up_close" href="javascript:PopUpHide()">Х</a>
+                </div>
+            <label for="email_auth">email</label>
+            <input class="form-email"  type="email" placeholder="Эл почта" id="email"
+            pattern=".+@globex.com"  required> 
+            <label for="password_auth">введите пароль</label>
+            
+            <input  class="form-password" type="password" name="pass"  id="password_auth" placeholder="Пароль">
+            <div class="form-checbox">
+                    <input class="checkbox" type="checkbox" name="agree" value="1" checked="checked">
+                    С правилами офферты согласен. Согласен на обработку персональных данных согласно <a href="/be_policy.html">Положению об обработке и защите персональных данных
+                        пользователей</a>
+                    </div>
+                    <div class="form-login">
+                            <a href="#" class="auth-btn btn-change-content-wrapper">Забыли пароль<span>?</span></a>
+                            <input type="submit" class="button" onclick="yaCounter49524391.reachGoal('log-in'); return true;" value="Войти">
+                            
+                    </div>
+                </form>
+                    <div class="social">
+                        <h3>Войдите в 1 клик через соцсеть:</h3>
+                        <ul class="social__list">
+                            <li class="social__link">
+                                <a href="#">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="#">
+                                    <i class="fab fa-yandex"></i>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="#">
+                                    <i class="fas fa-at"></i>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+       
+
+    </div>
+</div>
+<div class="pop-up--2">
+    <div class="pop-up__content">
+       <div class="pop-up__title">
+           
+           <h1>Регистрация
+            </h1>
+       </div>
+       <form class="form-in" action="form">
+            <div class="pop-up__close">
+                    <a class="pop-up_close" href="javascript:PopUpHideReg()">Х</a>
+                </div>
+            <label for="email_auth">email</label>
+            <input class="form-email"  type="email" placeholder="Эл почта" id="email"
+            pattern=".+@globex.com"  required> 
+            <label for="password_auth">введите пароль</label>
+        
+            <div class="form-checbox">
+                    <input class="checkbox" type="checkbox" name="agree" value="1" checked="checked">
+                    С правилами офферты согласен. Согласен на обработку персональных данных согласно <a href="/be_policy.html">Положению об обработке и защите персональных данных
+                        пользователей</a>
+                    </div>
+                    <div class="form-login">
+                            <input type="submit" class="button" onclick="yaCounter49524391.reachGoal('log-in'); return true;" value="Регистрация">
+                            
+                    </div>
+                </form>
+                    <div class="social">
+                        <h3>Войдите в 1 клик через соцсеть:</h3>
+                        <ul class="social__list">
+                            <li class="social__link">
+                                <a href="#">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="#">
+                                    <i class="fab fa-yandex"></i>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="#">
+                                    <i class="fas fa-at"></i>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+       
+
+    </div>
+</div>
+    <script src="/script.js"> </script>
 </body>
 </html>
